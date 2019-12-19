@@ -161,6 +161,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     padding-top: 20px;
     .site-title {
       flex: 1;
+      font-size: 30px;
+      font-weight: bolder;
       text-align: center;
       color: black;
       a {
@@ -194,5 +196,149 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
         margin-left: 10px;
       }
     }
+  }
+}
+
+.promo-tag {
+  padding: 8px;
+  background-color: black;
+  color: white;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+.shop-hero {
+  .shop-hero-img {
+    min-width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+}
+
+.category {
+  height: 80px;
+  width: 200px;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  background-color: white;
+  border: 2px solid black;
+  position: absolute;
+  top: -40px;
+  left: 200px;
+  z-index: 5;
+  &.kid {
+    width: 150px;
+    left: 90px;
+  }
+}
+
+.men-category {
+  position: relative;
+  .men-category-img {
+    width: 580px;
+    box-sizing: border-box;
+    object-fit: contain;
+    outline: 18px solid black;
+    margin: 8px;
+  }
+}
+
+.women-category {
+  position: relative;
+  .women-category-img {
+    width: 580px;
+    height: 387px;
+    outline: 18px solid black;
+    object-fit: cover;
+    margin: 8px;
+  }
+}
+
+.kids-category {
+  position: relative;
+  .kids-category-img {
+    width: 300px;
+    height: 387px;
+    object-fit: cover;
+    margin: 8px;
+    outline: 18px solid black;
+  }
+}
+
+.trends-hero {
+  position: relative;
+  .trends-hero-img {
+    min-width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+  .trend-title {
+    left: 635px;
+    width: 250px;
+  }
+}
+
+.trend-autumn {
+  .trend-autumn-img {
+    width: 225px;
+    height: 225px;
+    outline: 10px solid black;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+}
+
+.trend-box {
+  .trend-winter {
+    .trend-winter-img {
+      width: 225px;
+      height: 225px;
+      outline: 10px solid black;
+      -o-object-fit: cover;
+      object-fit: cover;
+    }
+  }
+  .trend-spring {
+    .trend-spring-img {
+      width: 225px;
+      height: 225px;
+      outline: 10px solid black;
+      -o-object-fit: cover;
+      object-fit: cover;
+    }
+  }
+}
+.trend-summer {
+  .trend-summer-img {
+    width: 225px;
+    height: 225px;
+    outline: 10px solid black;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+}
+
+.about-title {
+  text-align: center;
+  color: black;
+}
+
+.about-hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  .about-hero-img {
+    width: 580px;
+    height: 387px;
+    outline: 10px solid black;
+    object-fit: cover;
+    margin-bottom: 100px;
+  }
+  .about-read-more {
+    left: 635px;
+    top: 350px;
+    width: 250px;
   }
 }
