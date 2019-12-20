@@ -41,12 +41,25 @@ do_action('woocommerce_before_main_content');
  * @hooked woocommerce_taxonomy_archive_description - 10
  * @hooked woocommerce_product_archive_description - 10
  */
+
 do_action('woocommerce_archive_description');
 if (is_shop()) {
 
     get_template_part('template-parts/content', 'startpage');
 
 }
+function product_setup()
+{
+
+    if (is_product_category(array('men', 'women'))) {
+
+        get_template_part('template-parts/content', 'productlist');
+    }
+
+}
+
+add_action('woocommerce_before_shop_loop', 'product_setup');
+
 ?>
 </header>
 <?php

@@ -195,3 +195,14 @@ function prefix_custom_pre_get_posts_query($q)
         $q->set('tax_query', $tax_query);
     }
 }
+
+add_action('template_redirect', 'remove_woohooks_shop');
+function remove_woohooks_shop()
+{
+
+    if (is_shop()) {
+        remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0);
+        remove_action( 'woocommerce_no_products_found', 'wc_no_products_found' );
+    }
+}
+
