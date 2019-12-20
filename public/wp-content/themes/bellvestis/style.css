@@ -986,6 +986,110 @@ object {
   display: block;
 }
 
+/*--------------------------------------------------------------
+# Product Archive
+--------------------------------------------------------------*/
+.woocommerce-products-header__title {
+  display: none;
+}
+
+.archive-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: black;
+}
+
+.archive {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid red;
+}
+
+.archive:nth-child(1) {
+  padding: 15px;
+}
+
+.archive .archive-title {
+  text-align: center;
+}
+
+.archive .archive-desc {
+  text-align: center;
+}
+
+.archive .archive-img {
+  width: 50%;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.columns-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-flow: column wrap;
+      flex-flow: column wrap;
+}
+
+.columns-3 li.product {
+  text-align: center;
+}
+
+.columns-3 li.product .woocommerce-loop-product__link {
+  text-decoration: none;
+  color: black;
+}
+
+.columns-3 li.product .wp-post-image {
+  display: inline-block;
+}
+
+.columns-3 li.product .add_to_cart_button,
+.columns-3 li.product .tinvwl_add_to_wishlist_button {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  background-color: white;
+  border: 2px solid black;
+  margin: 10px 125px;
+}
+
+.columns-3 li.product .tinvwl_add_to_wishlist_button.tinvwl-icon-heart:before {
+  border: 1px solid black;
+  padding: 9px;
+  font-size: 18px;
+  border-radius: 50%;
+  color: red;
+  content: "\2665";
+}
+
+/*--------------------------------------------------------------
+# Product 
+--------------------------------------------------------------*/
 .site-header {
   display: -webkit-box;
   display: -ms-flexbox;

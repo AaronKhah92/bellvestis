@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Bellvestis functions and definitions
  *
@@ -7,7 +8,7 @@
  * @package Bellvestis
  */
 
-if (!function_exists('bellvestis_setup')):
+if (!function_exists('bellvestis_setup')) :
     /**
      * Sets up theme defaults and registers support for various WordPress features.
      *
@@ -16,7 +17,7 @@ if (!function_exists('bellvestis_setup')):
      * as indicating support for post thumbnails.
      */
     function bellvestis_setup()
-{
+    {
         /*
          * Make theme available for translation.
          * Translations can be filed in the /languages/ directory.
@@ -202,7 +203,7 @@ function remove_woohooks_shop()
 
     if (is_shop()) {
         remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0);
-        remove_action( 'woocommerce_no_products_found', 'wc_no_products_found' );
+        remove_action('woocommerce_no_products_found', 'wc_no_products_found');
+    } elseif (is_category()) {
     }
 }
-

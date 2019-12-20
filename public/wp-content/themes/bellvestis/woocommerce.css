@@ -98,10 +98,6 @@ ul.products li.product img {
   display: block;
 }
 
-ul.products li.product .button {
-  display: block;
-}
-
 @media screen and (min-width: 48em) {
   ul.products li.product {
     width: 30.79667%;

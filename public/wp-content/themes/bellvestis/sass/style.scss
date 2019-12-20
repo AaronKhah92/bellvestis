@@ -104,6 +104,17 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Media
 --------------------------------------------------------------*/
 @import "media/media";
+
+/*--------------------------------------------------------------
+# Product Archive
+--------------------------------------------------------------*/
+@import "products/product-archive";
+
+/*--------------------------------------------------------------
+# Product 
+--------------------------------------------------------------*/
+@import "products/single-product-page";
+
 .site-header {
   display: flex;
   flex-direction: column;
