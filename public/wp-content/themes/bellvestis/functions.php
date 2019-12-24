@@ -127,6 +127,9 @@ function bellvestis_scripts()
 {
     wp_enqueue_style('bellvestis-style', get_stylesheet_uri());
 
+
+    wp_enqueue_style('blueprint-css', "https://unpkg.com/blueprint-css@3.1.1/dist/blueprint.min.css", [], false, '');
+
     wp_enqueue_style('bass', 'https://unpkg.com/basscss@8.0.2/css/basscss.min.css', [], false, '');
 
     wp_enqueue_script('bellvestis-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true);

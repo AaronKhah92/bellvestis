@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The Template for displaying product archives, including the main shop page which is a post type archive
  *
@@ -30,37 +31,35 @@ do_action('woocommerce_before_main_content');
 
 ?>
 <header class="woocommerce-products-header">
-	<?php if (apply_filters('woocommerce_show_page_title', true)): ?>
-		<h1 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title();?></h1>
-	<?php endif;?>
+    <?php if (apply_filters('woocommerce_show_page_title', true)) : ?>
+        <h1 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h1>
+    <?php endif; ?>
 
-	<?php
-/**
- * Hook: woocommerce_archive_description.
- *
- * @hooked woocommerce_taxonomy_archive_description - 10
- * @hooked woocommerce_product_archive_description - 10
- */
+    <?php
+    /**
+     * Hook: woocommerce_archive_description.
+     *
+     * @hooked woocommerce_taxonomy_archive_description - 10
+     * @hooked woocommerce_product_archive_description - 10
+     */
 
-do_action('woocommerce_archive_description');
-if (is_shop()) {
+    do_action('woocommerce_archive_description');
+    if (is_shop()) {
 
-    get_template_part('template-parts/content', 'startpage');
+        get_template_part('template-parts/content', 'startpage');
+    }
+    function product_setup()
+    {
 
-}
-function product_setup()
-{
+        if (is_product_category(array('men', 'women', 'kids'))) {
 
-    if (is_product_category(array('men', 'women'))) {
-
-        get_template_part('template-parts/content', 'productlist');
+            get_template_part('template-parts/content', 'productlist');
+        }
     }
 
-}
+    add_action('woocommerce_before_shop_loop', 'product_setup');
 
-add_action('woocommerce_before_shop_loop', 'product_setup');
-
-?>
+    ?>
 </header>
 <?php
 if (woocommerce_product_loop()) {

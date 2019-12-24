@@ -111,3 +111,4 @@ Thumbs.db
 !wp-content/plugins/example-plugin/
 !wp-content/themes/example-theme/
 !wp-content/themes/bellvestis/
+wp-content/themes/bellvestis/wordpress-stubs.php

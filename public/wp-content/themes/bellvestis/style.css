@@ -1314,23 +1314,23 @@ object {
 .trend-autumn .trend-autumn-img {
   width: 225px;
   height: 225px;
-  outline: 10px solid black;
+  outline: 10px solid white;
   -o-object-fit: cover;
   object-fit: cover;
 }
 
-.trend-box .trend-winter .trend-winter-img {
+.trend-winter .trend-winter-img {
   width: 225px;
   height: 225px;
-  outline: 10px solid black;
+  outline: 10px solid white;
   -o-object-fit: cover;
   object-fit: cover;
 }
 
-.trend-box .trend-spring .trend-spring-img {
+.trend-spring .trend-spring-img {
   width: 225px;
   height: 225px;
-  outline: 10px solid black;
+  outline: 10px solid white;
   -o-object-fit: cover;
   object-fit: cover;
 }
@@ -1338,7 +1338,7 @@ object {
 .trend-summer .trend-summer-img {
   width: 225px;
   height: 225px;
-  outline: 10px solid black;
+  outline: 10px solid white;
   -o-object-fit: cover;
   object-fit: cover;
 }
@@ -1361,7 +1361,7 @@ object {
 .about-hero .about-hero-img {
   width: 580px;
   height: 387px;
-  outline: 10px solid black;
+  outline: 10px solid white;
   -o-object-fit: cover;
      object-fit: cover;
   margin-bottom: 100px;

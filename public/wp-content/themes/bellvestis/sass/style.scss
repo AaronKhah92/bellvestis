@@ -295,37 +295,36 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   .trend-autumn-img {
     width: 225px;
     height: 225px;
-    outline: 10px solid black;
+    outline: 10px solid white;
     -o-object-fit: cover;
     object-fit: cover;
   }
 }
 
-.trend-box {
-  .trend-winter {
-    .trend-winter-img {
-      width: 225px;
-      height: 225px;
-      outline: 10px solid black;
-      -o-object-fit: cover;
-      object-fit: cover;
-    }
-  }
-  .trend-spring {
-    .trend-spring-img {
-      width: 225px;
-      height: 225px;
-      outline: 10px solid black;
-      -o-object-fit: cover;
-      object-fit: cover;
-    }
+.trend-winter {
+  .trend-winter-img {
+    width: 225px;
+    height: 225px;
+    outline: 10px solid white;
+    -o-object-fit: cover;
+    object-fit: cover;
   }
 }
+.trend-spring {
+  .trend-spring-img {
+    width: 225px;
+    height: 225px;
+    outline: 10px solid white;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+}
+
 .trend-summer {
   .trend-summer-img {
     width: 225px;
     height: 225px;
-    outline: 10px solid black;
+    outline: 10px solid white;
     -o-object-fit: cover;
     object-fit: cover;
   }
@@ -343,7 +342,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   .about-hero-img {
     width: 580px;
     height: 387px;
-    outline: 10px solid black;
+    outline: 10px solid white;
     object-fit: cover;
     margin-bottom: 100px;
   }
