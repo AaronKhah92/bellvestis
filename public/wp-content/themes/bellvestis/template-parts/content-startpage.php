@@ -18,27 +18,54 @@ $trend_spring_img = get_field('spring_trends');
 $trend_summer_img = get_field('summer_trends');
 $about_hero_img = get_field('about_hero');
 
-?>
+$prod_cat_args = array(
+  'taxonomy' => 'product_cat', //woocommerce
+  'orderby' => 'none',
+  'empty' => 0,
+);
 
+$woo_categories = get_categories($prod_cat_args);
+?>
 <p class="h4 promo-tag"><?php echo get_field('promo_tag'); ?></p>
 
 <a href="#" class="shop-hero"><img src="<?php echo $shop_hero_img['url']; ?>" alt="Shop Hero Image" class="shop-hero-img"></a>
+<?php
+foreach ($woo_categories as $woo_cat) {
+  $woo_cat_id = $woo_cat->term_id; //category ID
+  $woo_cat_name = $woo_cat->name; //category name
+  $woo_cat_slug = $woo_cat->slug; //category slug
 
-<a href="#" class="men-category"><img src="<?php echo $men_category_img['url']; ?>" alt="Men Category" class="men-category-img">
-  <div class="category">
-    <p class="h3">Herr</p>
-  </div>
-</a>
-<a href="#" class="women-category"><img src="<?php echo $women_category_img['url']; ?>" alt="Women Category" class="women-category-img">
-  <div class="category">
-    <p class="h3">Dam</p>
-  </div>
-</a>
-<a href="#" class="kids-category"><img src="<?php echo $kids_category_img['url']; ?>" alt="Kids Category" class="kids-category-img">
-  <div class="category kid">
-    <p class="h3">Barn</p>
-  </div>
-</a>
+  // $return .= '<a href="' . get_term_link($woo_cat_slug, 'product_cat') . '">' . $woo_cat_name . '</a>';
+
+  if ($woo_cat_slug == 'men') {
+    $return .= '<a href="' . get_term_link($woo_cat_slug, 'product_cat') . '"  class="men-category">';
+    $return .= '<img src="' . $men_category_img['url'] . '"';
+    $return .= 'class="men-category-img">';
+    $return .= '<div class="category">';
+    $return .= '<p class="h3">' . $woo_cat_name . '</p>';
+    $return .= '</div>';
+    $return .= '</a>';
+  } elseif ($woo_cat_slug == 'kids') {
+    $return .= '<a href="' . get_term_link($woo_cat_slug, 'product_cat') . '"  class="kids-category">';
+    $return .= '<img src="' . $kids_category_img['url'] . '"';
+    $return .= 'class="kids-category-img">';
+    $return .= '<div class="category kid">';
+    $return .= '<p class="h3">' . $woo_cat_name . '</p>';
+    $return .= '</div>';
+    $return .= '</a>';
+  } elseif ($woo_cat_slug == 'women') {
+    $return .= '<a href="' . get_term_link($woo_cat_slug, 'product_cat') . '"  class="women-category">';
+    $return .= '<img src="' . $women_category_img['url'] . '"';
+    $return .= 'class="women-category-img">';
+    $return .= '<div class="category">';
+    $return .= '<p class="h3">' . $woo_cat_name . '</p>';
+    $return .= '</div>';
+    $return .= '</a>';
+    echo $return;
+  }
+} //end of $woo_categories foreach
+
+?>
 
 <a href="#" class="trends-hero"><img src="<?php echo $trends_hero_img['url']; ?>" alt="Trends Hero Image" class="trends-hero-img">
   <div class="category trend-title">
