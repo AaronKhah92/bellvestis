@@ -7,16 +7,22 @@
  *
  * @package Bellvestis
  */
+
 $shop_hero_img = get_field('shop_hero');
-$men_category_img = get_field('men_category');
-$women_category_img = get_field('women_category');
-$kids_category_img = get_field('kids_category');
+$about_hero_img = get_field('about_hero');
 $trends_hero_img = get_field('trends_hero');
+
+
+$men_category_img = get_field('men_category');
+$kids_category_img = get_field('kids_category');
+$women_category_img = get_field('women_category');
+
+
 $trend_autumn_img = get_field('autumn_trends');
 $trend_winter_img = get_field('winter_trends');
 $trend_spring_img = get_field('spring_trends');
 $trend_summer_img = get_field('summer_trends');
-$about_hero_img = get_field('about_hero');
+
 
 $prod_cat_args = array(
   'taxonomy' => 'product_cat', //woocommerce
