@@ -1,0 +1,23 @@
+.login-menu {
+  display: flex;
+  padding-left: 20px;
+  padding-right: 10px;
+  padding-top: 25px;
+  flex-direction: row;
+  text-align: center;
+  justify-content: flex-end;
+  .login-btn {
+    height: 50px;
+    width: 200px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+    padding-top: 13px;
+    background-color: black;
+  }
+  .sign-up {
+    @extend .login-btn;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

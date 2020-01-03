@@ -876,6 +876,143 @@ a:hover, a:active {
 }
 
 /*--------------------------------------------------------------
+## Custom Header
+--------------------------------------------------------------*/
+.site-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* Login menu */
+  /* Header menu */
+  /* Site Branding */
+  /* Search form */
+}
+
+.site-header .login-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 20px;
+  padding-right: 10px;
+  padding-top: 25px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.site-header .login-menu .login-btn, .site-header .login-menu .sign-up {
+  height: 50px;
+  width: 200px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: white;
+  padding-top: 13px;
+  background-color: black;
+}
+
+.site-header .login-menu .sign-up {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.site-header .nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+.site-header .nav-menu .menu-item {
+  border: 3px solid black;
+  height: 50px;
+  width: 350px;
+  text-align: center;
+  padding-top: 12px;
+}
+
+.site-header .nav-menu .menu-item a {
+  text-decoration: none;
+  color: black;
+}
+
+.site-header .nav-menu .menu-item a:visited {
+  color: black;
+}
+
+.site-header .site-branding {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.site-header .site-branding .site-title {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: center;
+  color: black;
+}
+
+.site-header .site-branding .site-title a {
+  text-decoration: none;
+}
+
+.site-header .site-branding .site-title a:visited {
+  color: black;
+}
+
+.site-header .search-form {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  padding-left: 40px;
+  padding-top: 25px;
+}
+
+.site-header .search-form .search-field {
+  outline: 3px solid black;
+  height: 50px;
+  width: 400px;
+  text-align: center;
+}
+
+.site-header .search-form .search-submit {
+  height: 50px;
+  width: 200px;
+  font-size: 16px;
+  color: white;
+  background-color: black;
+  outline: 2px solid black;
+  border: 1px solid black;
+  border-radius: 0;
+  margin-left: 10px;
+}
+
+/*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
@@ -1089,136 +1226,6 @@ object {
 /*--------------------------------------------------------------
 # Product 
 --------------------------------------------------------------*/
-.site-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.site-header .login-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-left: 20px;
-  padding-right: 10px;
-  padding-top: 25px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  text-align: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.site-header .login-menu .login-btn, .site-header .login-menu .sign-up {
-  height: 50px;
-  width: 200px;
-  margin-right: 10px;
-  text-decoration: none;
-  color: white;
-  padding-top: 13px;
-  background-color: black;
-}
-
-.site-header .login-menu .sign-up {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.site-header .nav-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 100%;
-}
-
-.site-header .nav-menu .menu-item {
-  border: 3px solid black;
-  height: 50px;
-  width: 350px;
-  text-align: center;
-  padding-top: 12px;
-}
-
-.site-header .nav-menu .menu-item a {
-  text-decoration: none;
-  color: black;
-}
-
-.site-header .nav-menu .menu-item a:visited {
-  color: black;
-}
-
-.site-header .site-branding {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  padding-left: 20px;
-  padding-top: 20px;
-}
-
-.site-header .site-branding .site-title {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  font-size: 30px;
-  font-weight: bolder;
-  text-align: center;
-  color: black;
-}
-
-.site-header .site-branding .site-title a {
-  text-decoration: none;
-}
-
-.site-header .site-branding .site-title a:visited {
-  color: black;
-}
-
-.site-header .site-branding .search-form {
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
-  padding-left: 40px;
-  padding-top: 25px;
-}
-
-.site-header .site-branding .search-form .search-field {
-  outline: 3px solid black;
-  height: 50px;
-  width: 400px;
-  text-align: center;
-}
-
-.site-header .site-branding .search-form .search-submit {
-  height: 50px;
-  width: 200px;
-  font-size: 16px;
-  color: white;
-  background-color: black;
-  outline: 2px solid black;
-  border: 1px solid black;
-  border-radius: 0;
-  margin-left: 10px;
-}
-
 body {
   background-color: #eeeeee;
 }

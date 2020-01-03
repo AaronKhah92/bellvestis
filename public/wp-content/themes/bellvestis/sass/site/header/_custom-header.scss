@@ -1,0 +1,18 @@
+.site-header {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+
+  /* Login menu */
+  @import "login-menu";
+
+  /* Header menu */
+  @import "header-menu";
+
+  /* Site Branding */
+  @import "header-branding";
+
+  /* Search form */
+  @import "search-form";
+}

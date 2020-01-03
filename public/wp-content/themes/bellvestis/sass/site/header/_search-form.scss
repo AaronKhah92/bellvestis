@@ -1,0 +1,24 @@
+.search-form {
+  flex: 2;
+  padding-left: 40px;
+  padding-top: 25px;
+
+  .search-field {
+    outline: 3px solid black;
+    height: 50px;
+    width: 400px;
+    text-align: center;
+  }
+
+  .search-submit {
+    height: 50px;
+    width: 200px;
+    font-size: 16px;
+    color: white;
+    background-color: black;
+    outline: 2px solid black;
+    border: 1px solid black;
+    border-radius: 0;
+    margin-left: 10px;
+  }
+}

@@ -1,0 +1,21 @@
+.site-branding {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-left: 20px;
+  padding-top: 20px;
+  .site-title {
+    flex: 1;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    color: black;
+    a {
+      text-decoration: none;
+      &:visited {
+        color: black;
+      }
+    }
+  }
+
+}
