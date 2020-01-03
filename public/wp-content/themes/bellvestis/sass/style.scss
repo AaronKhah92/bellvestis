@@ -210,6 +210,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   }
 }
 
+body {
+  background-color: #eeeeee;
+}
+
 .promo-tag {
   padding: 8px;
   background-color: black;
@@ -295,9 +299,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   .trend-autumn-img {
     width: 225px;
     height: 225px;
-    outline: 10px solid white;
     -o-object-fit: cover;
     object-fit: cover;
+    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+      -9px -9px 16px rgba(255, 255, 255, 0.8);
   }
 }
 
@@ -305,18 +310,20 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   .trend-winter-img {
     width: 225px;
     height: 225px;
-    outline: 10px solid white;
     -o-object-fit: cover;
     object-fit: cover;
+    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+      -9px -9px 16px rgba(255, 255, 255, 0.8);
   }
 }
 .trend-spring {
   .trend-spring-img {
     width: 225px;
     height: 225px;
-    outline: 10px solid white;
     -o-object-fit: cover;
     object-fit: cover;
+    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+      -9px -9px 16px rgba(255, 255, 255, 0.8);
   }
 }
 
@@ -324,9 +331,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   .trend-summer-img {
     width: 225px;
     height: 225px;
-    outline: 10px solid white;
     -o-object-fit: cover;
     object-fit: cover;
+    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+      -9px -9px 16px rgba(255, 255, 255, 0.8);
   }
 }
 
@@ -342,9 +350,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   .about-hero-img {
     width: 580px;
     height: 387px;
-    outline: 10px solid white;
     object-fit: cover;
     margin-bottom: 100px;
+    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+      -9px -9px 16px rgba(255, 255, 255, 0.8);
   }
   .about-read-more {
     left: 635px;
