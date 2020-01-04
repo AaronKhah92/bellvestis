@@ -2,82 +2,132 @@
  * Single Product
  */
 .single-product {
-	div.product {
-		@include clearfix;
-		position: relative;
+  div.product {
+    @include clearfix;
+    position: relative;
 
-		.woocommerce-product-gallery {
-			position: relative;
+    .woocommerce-product-gallery {
+      position: relative;
 
-			.woocommerce-product-gallery__trigger {
-				position: absolute;
-				top: 1em;
-				right: 1em;
-				display: block;
-				z-index: 99;
-			}
+      .woocommerce-product-gallery__trigger {
+        position: absolute;
+        top: 1em;
+        right: 1em;
+        display: block;
+        z-index: 99;
+      }
 
-			.flex-viewport {
-				margin-bottom: 1em;
-			}
+      .flex-viewport {
+        margin-bottom: 1em;
+      }
 
-			.flex-control-thumbs {
-				@include clearfix;
-				margin: 0;
-				padding: 0;
+      .flex-control-thumbs {
+        @include clearfix;
+        margin: 0;
+        padding: 0;
 
-				li {
-					list-style: none;
-					cursor: pointer;
-					float: left;
+        li {
+          list-style: none;
+          cursor: pointer;
+          float: left;
 
-					img {
-						opacity: .5;
+          img {
+            opacity: 0.5;
 
-						&.flex-active {
-							opacity: 1;
-						}
-					}
+            &.flex-active {
+              opacity: 1;
+            }
+          }
 
-					&:hover {
-						img {
-							opacity: 1;
-						}
-					}
-				}
-			}
+          &:hover {
+            img {
+              opacity: 1;
+            }
+          }
+        }
+      }
 
-			@for $i from 2 through 5 {
-				&.woocommerce-product-gallery--columns-#{$i} {
-					.flex-control-thumbs {
-						li {
-							@include column-width($i);
+      @for $i from 2 through 5 {
+        &.woocommerce-product-gallery--columns-#{$i} {
+          .flex-control-thumbs {
+            li {
+              @include column-width($i);
 
-							&:nth-child(#{$i}n) {
-								margin-right: 0;
-							}
+              &:nth-child(#{$i}n) {
+                margin-right: 0;
+              }
 
-							&:nth-child(#{$i}n+1) {
-								clear: both;
-							}
-						}
-					}
-				}
-			}
-		}
-	}
+              &:nth-child(#{$i}n + 1) {
+                clear: both;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .summary {
+      &.entry-summary {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .cart {
+          .quantity {
+          }
+          .single_add_to_cart_button {
+            height: 50px;
+            width: 200px;
+            margin-top: 20px;
+            font-size: 16px;
+            color: white;
+            background-color: black;
+            outline: 2px solid black;
+            border: 1px solid black;
+            border-radius: 0;
+          }
+
+          .tinvwl_add_to_wishlist_button {
+            outline: 3px solid black;
+            height: 50px;
+            width: 200px;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+            background-color: white;
+            padding-top: 15px;
+          }
+        }
+        .woocommerce-product-details__short-description {
+          width: 500px;
+        }
+        .product_meta {
+          margin-top: 15px;
+          margin-bottom: 30px;
+        }
+      }
+
+      .related {
+        &.products {
+          .products {
+            margin: auto;
+          }
+        }
+      }
+    }
+  }
 }
 
 .stock {
-	&:empty:before {
-		display: none;
-	}
+  &:empty:before {
+    display: none;
+  }
 
-	&.in-stock {
-		color: $woocommerce__color-success;
-	}
+  &.in-stock {
+    color: $woocommerce__color-success;
+  }
 
-	&.out-of-stock {
-		color: $woocommerce__color-error;
-	}
+  &.out-of-stock {
+    color: $woocommerce__color-error;
+  }
 }

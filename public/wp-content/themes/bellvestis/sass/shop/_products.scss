@@ -3,13 +3,21 @@
  */
 ul.products {
   @include clearfix;
-  margin: 0;
+  margin: auto;
   padding: 0;
 
   li.product {
     list-style: none;
     position: relative;
     margin-bottom: 2em;
+
+    .onsale {
+      position: absolute;
+      bottom: 250px;
+      right: 40px;
+      width: 300px;
+      background-color: rgb(255, 99, 71);
+    }
 
     .woocommerce-loop-product__title {
       font-size: 1rem;
