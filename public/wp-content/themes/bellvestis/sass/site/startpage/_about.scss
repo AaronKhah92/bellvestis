@@ -1,0 +1,23 @@
+.about-title {
+  text-align: center;
+  color: black;
+}
+
+.about-hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  .about-hero-img {
+    width: 580px;
+    height: 387px;
+    object-fit: cover;
+    margin-bottom: 100px;
+    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+      -9px -9px 16px rgba(255, 255, 255, 0.8);
+  }
+  .about-read-more {
+    left: 635px;
+    top: 350px;
+    width: 250px;
+  }
+}

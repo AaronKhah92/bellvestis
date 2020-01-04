@@ -1,0 +1,23 @@
+.trends-hero {
+  position: relative;
+  .trends-hero-img {
+    min-width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+  .trend-title {
+    left: 635px;
+    width: 250px;
+  }
+}
+
+.trend-main {
+  .trend-img {
+    width: 225px;
+    height: 225px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+      -9px -9px 16px rgba(255, 255, 255, 0.8);
+  }
+}

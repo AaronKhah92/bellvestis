@@ -44,9 +44,9 @@ foreach ($woo_categories as $woo_cat) {
   // $return .= '<a href="' . get_term_link($woo_cat_slug, 'product_cat') . '">' . $woo_cat_name . '</a>';
 
   if ($woo_cat_slug == 'men') {
-    $return .= '<a href="' . get_term_link($woo_cat_slug, 'product_cat') . '"  class="men-category">';
+    $return .= '<a href="' . get_term_link($woo_cat_slug, 'product_cat') . '"  class="category-item">';
     $return .= '<img src="' . $men_category_img['url'] . '"';
-    $return .= 'class="men-category-img">';
+    $return .= 'class="category-img">';
     $return .= '<div class="category">';
     $return .= '<p class="h3">' . $woo_cat_name . '</p>';
     $return .= '</div>';
@@ -60,9 +60,9 @@ foreach ($woo_categories as $woo_cat) {
     $return .= '</div>';
     $return .= '</a>';
   } elseif ($woo_cat_slug == 'women') {
-    $return .= '<a href="' . get_term_link($woo_cat_slug, 'product_cat') . '"  class="women-category">';
+    $return .= '<a href="' . get_term_link($woo_cat_slug, 'product_cat') . '"  class="category-item">';
     $return .= '<img src="' . $women_category_img['url'] . '"';
-    $return .= 'class="women-category-img">';
+    $return .= 'class="category-img">';
     $return .= '<div class="category">';
     $return .= '<p class="h3">' . $woo_cat_name . '</p>';
     $return .= '</div>';
@@ -80,14 +80,14 @@ foreach ($woo_categories as $woo_cat) {
 </a>
 
 <div bp="grid" class="trend-container">
-  <a bp="4@sm 2@md" href="#" class="trend-autumn mx-auto"><img class="trend-autumn-img" src="<?php echo $trend_autumn_img['url']; ?>" alt="Trend Autumn Image"></a>
+  <a bp="4@sm 2@md" href="#" class="trend-main mx-auto"><img class="trend-img" src="<?php echo $trend_autumn_img['url']; ?>" alt="Trend Autumn Image"></a>
 
   <div bp="4@sm 8@md" class="mx-auto">
-    <a href="#" class="trend-winter"><img src="<?php echo $trend_winter_img['url']; ?>" alt="Trend winter Image" class="trend-winter-img"></a>
-    <a href="#" class="trend-spring"><img src="<?php echo $trend_spring_img['url']; ?>" alt="Trend spring Image" class="trend-spring-img"></a>
+    <a href="#" class="trend-main"><img src="<?php echo $trend_winter_img['url']; ?>" alt="Trend winter Image" class="trend-img"></a>
+    <a href="#" class="trend-main"><img src="<?php echo $trend_spring_img['url']; ?>" alt="Trend spring Image" class="trend-img"></a>
   </div>
 
-  <a bp="4@sm 2@md" href="#" class="trend-summer mx-auto"><img src="<?php echo $trend_summer_img['url']; ?>" alt="Trend summer Image" class="trend-summer-img"></a>
+  <a bp="4@sm 2@md" href="#" class="trend-main mx-auto"><img src="<?php echo $trend_summer_img['url']; ?>" alt="Trend summer Image" class="trend-img"></a>
 </div>
 <p class="about-title h1">Om Bellvestis</p>
 <a href="#" class="about-hero"><img class="about-hero-img" src="<?php echo $about_hero_img['url']; ?>" alt="About Hero Image" class="about-hero-img">
