@@ -397,8 +397,14 @@ textarea {
   line-height: 1.5;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   clear: both;
+  text-align: center;
 }
 
 p {
@@ -575,6 +581,10 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 3px;
   padding: 3px;
+  outline: 3px solid black;
+  height: 50px;
+  width: 200px;
+  text-align: center;
 }
 
 input[type="text"]:focus,
@@ -1344,7 +1354,8 @@ object {
 .columns-3 li.product .tinvwl_add_to_wishlist_button.tinvwl-icon-heart:before {
   border: 1px solid black;
   padding: 9px;
-  font-size: 18px;
+  font-size: 16px;
+  margin-left: 5px;
   border-radius: 50%;
   color: red;
   content: "\2665";
