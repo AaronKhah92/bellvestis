@@ -7,11 +7,6 @@
  *
  * @package Bellvestis
  */
-$pop = get_queried_object();
-var_dump($pop);
-$archive_hero_title = get_field('store_name');
-var_dump($archive_hero_title);
-echo $archive_hero_title;
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

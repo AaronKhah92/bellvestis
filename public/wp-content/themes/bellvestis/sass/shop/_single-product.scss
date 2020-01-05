@@ -73,8 +73,6 @@
         flex-direction: column;
 
         .cart {
-          .quantity {
-          }
           .single_add_to_cart_button {
             height: 50px;
             width: 200px;
@@ -85,6 +83,7 @@
             outline: 2px solid black;
             border: 1px solid black;
             border-radius: 0;
+            cursor: pointer;
           }
 
           .tinvwl_add_to_wishlist_button {
