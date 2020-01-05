@@ -265,6 +265,7 @@ ul.products li.product img {
   outline: 2px solid black;
   border: 1px solid black;
   border-radius: 0;
+  cursor: pointer;
 }
 
 .single-product div.product .summary.entry-summary .cart .tinvwl_add_to_wishlist_button {

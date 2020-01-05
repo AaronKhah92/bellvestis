@@ -1020,6 +1020,7 @@ a:hover, a:active {
   border: 1px solid black;
   border-radius: 0;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 /* Promotion tagline */
