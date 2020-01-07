@@ -1153,6 +1153,10 @@ a:hover, a:active {
 }
 
 /* Footer */
+.widget-title {
+  color: black;
+}
+
 .jr-insta-thumb {
   height: 800px;
   width: 900px;
@@ -1172,6 +1176,98 @@ a:hover, a:active {
   margin-left: 25px;
 }
 
+/*--------------------------------------------------------------
+## Account page 
+--------------------------------------------------------------*/
+/* log in form styles */
+.entry-header .entry-title {
+  color: black;
+}
+
+.entry-content h2 {
+  color: black;
+}
+
+.woocommerce-form.woocommerce-form-login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.woocommerce-form .woocommerce-form-row {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  position: relative;
+}
+
+.woocommerce-form .woocommerce-form-row label {
+  font-size: 18px;
+  color: black;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.woocommerce-form .woocommerce-form-row .woocommerce-Input.woocommerce-Input--text {
+  width: 250px;
+}
+
+.woocommerce-form .woocommerce-form-row .woocommerce-Input.woocommerce-Input--text:nth-child(2) {
+  margin-right: 10px;
+}
+
+.woocommerce-form .form-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: black;
+}
+
+.woocommerce-form .form-row .woocommerce-form-login__rememberme {
+  margin-bottom: 15px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: black;
+  font-size: 18px;
+}
+
+.woocommerce-form .form-row .woocommerce-form-login__submit {
+  height: 50px;
+  width: 200px;
+  font-size: 16px;
+  color: white;
+  background-color: black;
+  outline: 2px solid black;
+  border: 1px solid black;
+  border-radius: 0;
+  cursor: pointer;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.woocommerce-form .woocommerce-LostPassword {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 0px;
+}
+
+.woocommerce-form .woocommerce-LostPassword a {
+  color: black;
+}
+
+/* Logged in page styles */
+/* Register form styles */
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
