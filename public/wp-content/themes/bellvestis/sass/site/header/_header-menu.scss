@@ -2,17 +2,19 @@
   display: flex;
   justify-content: space-around;
   width: 100%;
+  margin-bottom: 20px;
   .menu-item {
     border: 3px solid black;
     height: 50px;
     width: 350px;
     text-align: center;
     padding-top: 12px;
+    background-color: black;
     a {
       text-decoration: none;
-      color: black;
+      color: white;
       &:visited {
-        color: black;
+        color: white;
       }
     }
   }
