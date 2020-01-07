@@ -214,3 +214,17 @@ function remove_woohooks_shop()
     } elseif (is_category()) {
     }
 }
+
+/* Nedan kod är hämtad från https://www.bobz.co/woocommerce-coupon-for-logged-in-user-only/ */
+
+
+add_filter('woocommerce_coupon_is_valid', function ($is_valid, $coupon) {
+    /**
+     * Selected coupons allowed for logged in users only
+     */
+    if (in_array($coupon->get_code(), ['loggedinonly', 'unstrapped']) && !is_user_logged_in()) {
+        return false;
+    }
+
+    return $is_valid;
+}, 100, 2);
