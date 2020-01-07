@@ -945,6 +945,7 @@ a:hover, a:active {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .site-header .nav-menu .menu-item {
@@ -953,15 +954,16 @@ a:hover, a:active {
   width: 350px;
   text-align: center;
   padding-top: 12px;
+  background-color: black;
 }
 
 .site-header .nav-menu .menu-item a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .site-header .nav-menu .menu-item a:visited {
-  color: black;
+  color: white;
 }
 
 .site-header .site-branding {
@@ -1148,6 +1150,26 @@ a:hover, a:active {
   left: 635px;
   top: 350px;
   width: 250px;
+}
+
+/* Footer */
+.jr-insta-thumb {
+  height: 800px;
+  width: 900px;
+  margin: auto;
+}
+
+.site-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 900px;
+  margin: auto;
+  color: black;
+}
+
+.site-footer .copy {
+  margin-left: 25px;
 }
 
 /*--------------------------------------------------------------
