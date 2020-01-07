@@ -109,7 +109,7 @@ add_action('after_setup_theme', 'bellvestis_content_width', 0);
 function bellvestis_widgets_init()
 {
     register_sidebar(array(
-        'name' => esc_html__('Sidebar', 'bellvestis'),
+        'name' => esc_html__('Footer', 'bellvestis'),
         'id' => 'sidebar-1',
         'description' => esc_html__('Add widgets here.', 'bellvestis'),
         'before_widget' => '<section id="%1$s" class="widget %2$s">',
